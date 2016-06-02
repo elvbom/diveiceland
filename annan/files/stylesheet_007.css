@@ -1,0 +1,88 @@
+/* Start of CMSMS style sheet 'Guestbook (default/example stylesheet)' */
+/*
+ Default/example stylesheet for the CMSMS Guestbook module.
+This may be overwritten when the module is upgraded and it will be deleted when 
+the module is uninstalled, so make a copy if you want to modify it.
+*/
+
+ /* Style pagination */
+
+.cms-guestbook-pagination_header {
+	margin: .5em 0;
+}
+.cms-guestbook-pagination_nav {
+	font-weight: bold;
+	margin: .5em 0;
+}
+.cms-guestbook-pagination_nav a {
+    font-weight: normal;
+}
+
+/* Style the guestbook */
+
+/* Style each entry */
+.cms-guestbook-entry
+{
+	border: 1px solid #069;
+	margin-bottom: 1em;
+}
+
+/* Style the message header */
+.cms-guestbook-entry-header
+{
+	background: #385C72;
+	color: white;
+	border: 1px solid black;
+	margin: 1px;
+}
+
+/* Style the actual message */
+.cms-guestbook-entry-text 
+{
+	background: #eee;
+	padding: .5em;
+	color: black;
+}
+
+/* Show the postdate on the right */
+.cms-guestbook-entry-posted 
+{
+	float: right;
+	font-size: smaller;
+}
+
+/* Style message header links */
+.cms-guestbook-entry-header a {
+	color: white;
+} 
+.cms-guestbook-entry-header a:hover {
+	color: black;
+} 
+		  
+/* Style the sender name */
+.cms-guestbook-entry-sendername
+{
+	font-weight: bold;
+}
+
+/* Style the E-mail link */
+.cms-guestbook-entry-email {
+	font-size: smaller;
+}
+		      
+/* Style the senders homepage link */
+.cms-guestbook-entry-homepage
+{
+	font-size: smaller;
+	margin: 2px;
+	margin-bottom: 0;
+}
+
+/* The some smileys links */
+.cms-guestbook-somesmileys a
+{
+	margin-right: .5em;
+}
+
+/* End of 'Guestbook (default/example stylesheet)' */
+

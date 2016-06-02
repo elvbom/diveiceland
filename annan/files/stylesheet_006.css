@@ -1,0 +1,150 @@
+/* Start of CMSMS style sheet 'Navigation: Simple - Vertical' */
+/********************
+MENU
+*********************/
+#menu_vert {
+   padding-left: 0;
+   margin-left: 1em;
+}
+
+
+/* third level has some padding to have it stand out */
+div#menu_vert ul ul ul {
+   padding-bottom: 0.2em;
+}
+
+/* menu li block */
+#menu_vert li {
+   list-style: none;
+   margin: 0;
+   /*border-bottom: 1px dashed #978;*/
+   border-left: 1px dashed #123;
+   border-right: 1px dashed #123;
+   display: block;
+}
+
+#menu_vert ul ul li {
+   border: none;
+}
+
+/** fix stupid ie bug with display:block; **/
+* html #menu_vert li a { height: 1%; } 
+* html #menu_vert li hr { height: 1%; }
+/** end fix **/
+
+/* first level links */
+div#menu_vert a {
+   text-decoration:none; /* no underline for links */
+   display: block; /* IE has problems with this, fixed above */
+   padding: 0.5em 0.5em 0.5em 1.0em; /* some air for it */
+   color: #cdb; /* this will be link color for all levels */
+   font-stretch: semi-expanded;
+   font-weight: 600;
+   /*background: url(uploads/Kafarinn/arrow-right-k.gif) no-repeat 0.5em center;*/
+   min-height:1em; /* Fixes IE7 whitespace bug */ 
+}
+
+/* next level links, more padding and smaller font */
+div#menu_vert ul ul a {
+   font-size: 90%;
+   padding: 0.4em 0.5em 0.4em 2.0em;
+   background-position: 1.5em center;
+}
+
+/* third level links, more padding */
+div#menu_vert ul ul ul a {
+   padding: 0.2em 0.5em 0.2em 3.0em;
+   /*background: url(uploads/Kafarinn/dash-k.gif) no-repeat 2.8em center; */
+}
+
+/* hover state for all links */
+div#menu_vert a:hover {
+   background-color: #E3E4EF;
+   color: #18507c;
+}
+div#menu_vert a.activeparent:hover {
+   background-color: #C3D4DF;
+   color: #18507C;
+}
+
+/* 
+active parent, that is the first-level parent 
+of a child page that is the current page 
+*/
+div#menu_vert li a.activeparent {
+   /*background: url(uploads/Kafarinn/arrow-down-k.gif) no-repeat 0.4em center; */
+   background-color: #385C72;
+   color: #abc;
+}
+
+div#menu_vert ul ul li a.activeparent {
+   background-position: 1.5em center; 
+   background-color: transparent;
+   color: #18507C;
+}
+
+
+/* 
+current pages in the default Menu Manager 
+template are unclickable. This is for current page on first level 
+*/
+div#menu_vert ul h3 {
+   /*background: url(uploads/Kafarinn/arrow-right-active-k.gif) no-repeat 0.4em center;*/
+   background-color: #284C72;
+   display: block; 
+   padding: 0.5em 0.5em 0.5em 1.0em;  /* some air for it */
+   color: #fff;                                 /* this will be link color for all levels */
+   font-size: 1em;                           /* instead of the normal font size for <h3> */
+   margin: 0;                                  /* as <h3> normally has some margin by default */
+}
+
+/* 
+next level current pages, more padding, 
+smaller font and no background color or bottom border 
+*/
+div#menu_vert ul ul h3 {
+   font-size: 90%;
+   padding: 0.4em 0.5em 0.4em 2.0em;
+   background-position: 1.4em center;
+   background-color: transparent;
+   border-bottom: none;
+   color: #aac;     
+}
+
+/* current page on third level, more padding */
+div#menu_vert ul ul ul h3 {
+   padding: 0.3em 0.5em 0.3em 3.0em;
+   /*background: url(uploads/Kafarinn/arrow-right-active-k.gif) no-repeat 2.7em center; */
+}
+
+/* section header */
+div#menu_vert li.sectionheader {
+   border-right: none;
+   font-size: 130%;
+   font-weight: bold;
+   padding: 1.5em 0 0.8em 0;
+   background-color: #abc;
+   line-height: 1em;
+   margin: 0;
+   text-align:center;
+}
+
+
+
+/* separator */
+div#menu_vert li.separator {
+   height: 1px !important;
+   margin-top: -1px;
+   margin-bottom: 0;
+   padding:2px 0 2px 0;
+   background-color: #000;
+   overflow:hidden !important;
+   line-height:1px !important;
+   font-size:1px; /* for ie */
+}
+
+div#menu_vert li.separator hr {
+   display: none; /* this is for accessibility */
+}
+/* End of 'Navigation: Simple - Vertical' */
+

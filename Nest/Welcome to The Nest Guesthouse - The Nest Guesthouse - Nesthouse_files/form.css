@@ -1,0 +1,90 @@
+#b_editDates {
+font-size:90%;
+color:#003580;
+font-family:sans-serif;
+line-height:1.2em;
+}
+
+#b_editDates h3 {
+margin:1.2em 0 0;
+font-size:100%;
+background:none !important;
+font-weight: bold;
+}
+
+#b_editDates form {
+border:1px solid #CCCCCC;
+padding:1px;
+display:block !important; /* to overwrite in office */
+}
+
+.b_availFormInner, #b_editDates form {
+-moz-border-radius:5px;
+-webkit-border-radius: 5px;
+}
+
+.b_availFormInner {
+background-color:#EAEAEA;
+overflow:hidden;
+padding:0.8em;
+_height: 1%;
+}
+
+.b_availDatesInner {
+float:left;
+width:auto;
+margin-bottom:0.9em;
+}
+
+.b_availDatesInner h4 {
+margin:0.3em 0 0;
+font-size:100%;
+}
+
+#b_availCheckIn {
+padding-right:2.4em;
+}
+
+#b_availCheckIn, #b_availCheckOut {
+margin-left:0;
+}
+
+.b_availDatesInner select {
+background:#FFFFFF;
+border:1px solid #CCCCCC;
+color:#333;
+font-size:100%;
+padding:2px;
+}
+
+#b_availSubmit {
+clear:none;
+float:right;
+margin-top:1.2em;
+text-align:right;
+}
+
+#b_availSubmit input {
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background: #ff6600;
+border: 2px solid #fff;
+padding:5px;
+color:#fff;
+font-size:100%;
+}
+
+#b_availSubmit input:hover {
+background:#003580;
+cursor:pointer;
+color:#fff;
+}
+
+#b_powered {
+font-size: 0.8em;
+display: block;
+margin-top: 5px;
+}
+
+/* FOR OFFICE TO DISPLAY FULL FONT SIZE */
+ul#integration_options li div#b_editDates {font-size:100% !important;}

@@ -1,0 +1,14 @@
+body {
+	margin:0;
+	padding:0;
+	background-image:url('http://www.diveiceland.com/bg.jpg');
+	background-repeat: no-repeat;
+	background-color: black;
+	background-size: 100%;
+	}
+#menu_vert {z-index: 10;}
+#sidebar {position: relative;z-index: 10;left:20px;}
+#demo2 {z-index:1;}
+#slides {z-index:1;}
+#sidebar ul {padding:0px;}
+#pagewrapper {background-color:transparent;}

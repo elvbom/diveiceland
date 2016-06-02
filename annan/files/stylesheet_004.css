@@ -1,0 +1,85 @@
+/* Start of CMSMS style sheet 'Module: News' */
+div#news {
+  margin: 2em 0 1em 1em;  /* margin for the entire div surrounding the news list */
+  border: 1px solid #000; 
+  background: #456; 
+}
+
+div#news h2 {
+   line-height: 2em;
+   background: #678;
+}
+
+.NewsSummary {
+    padding: 0.5em 0.5em 1em; /* padding for the news article summary */
+    margin: 0 0.5em 1em 0.5em; /* margin to the bottom of the news article summary */
+    border-bottom: 1px solid #000; 
+}
+
+.NewsSummaryPostdate {
+  font-size: 90%;
+  font-weight: bold;
+ }
+
+.NewsSummaryLink {
+    font-weight: bold;
+    padding-top: 0.2em;
+}
+
+.NewsSummaryCategory {
+  font-style: italic;
+  margin: 5px 0;
+ }
+
+.NewsSummaryAuthor {
+  font-style: italic;
+  padding-bottom: 0.5em;
+}
+
+.NewsSummarySummary, .NewsSummaryContent {
+  line-height: 140%;
+ }
+
+.NewsSummaryMorelink {
+  padding-top: 0.5em;
+}
+
+#NewsPostDetailDate {
+  font-size: 90%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  }
+
+#NewsPostDetailSummary {
+   line-height: 150%;
+   }
+
+#NewsPostDetailCategory {
+  font-style: italic;
+  border-top: 1px solid #ccc;
+  margin-top: 0.5em;
+  padding: 0.2em 0;
+}
+
+#NewsPostDetailContent {
+  margin-bottom: 15px;
+  line-height: 150%;
+  }
+
+#NewsPostDetailAuthor {
+
+  padding-bottom: 1.5em;
+  font-style: italic;
+}
+
+
+/* to add specific style to the below divs, uncomment them. */
+
+/* 
+#NewsPostDetailTitle {}
+#NewsPostDetailHorizRule {}
+#NewsPostDetailPrintLink {}
+#NewsPostDetailReturnLink {}
+*/
+/* End of 'Module: News' */
+

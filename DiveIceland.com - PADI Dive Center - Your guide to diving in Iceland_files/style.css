@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+}
+
+body {
+	/*background: black url("bg.png");*/
+	background: lightblue url("bg.jpg");
+	min-height: 100%;
+	background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top;
+	font-size: 1em;
+	font-family: "Open Sans", Helvetica Neue, Helvetica, sans-serif;
+	color: black;
+}
+
+a, a:link  a:active {
+   /*color: #bbe; */
+}
+
+a:visited {
+   /*color: #bbe;*/
+}
+
+a:hover {
+   text-decoration: none;
+   /*color: #ddf;*/
+}
+
+.right {
+	float: right;
+	text-align: right;
+	padding-top: 1%;
+	padding-right: 1%;
+	font-size: 0.7em;
+}
+
+.right img {
+	vertical-align: middle;
+}
+
+.right a {
+	color: white;
+	font-family: 'Open Sans';
+}
+
+div#header {  
+	overflow: auto;
+	text-align: center;
+}
+
+#header h1 {
+	font-family: 'Playfair Display', serif;
+	display: inline;
+	font-size: 3em;
+	color: white;
+	white-space: nowrap;
+}
+
+#header h1#left {
+	padding-right: 2%;
+}
+
+#header h1#right {
+	padding-left: 2%;
+}
+
+#header img {
+     vertical-align: top;
+}
+
+#content {
+	padding: 2%;
+	width: 80%;
+ 	margin: 0 auto;
+ 	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+ 	background-color: rgba(255, 255, 255, 0.8);
+ 	color: #ccc;
+}
+
+/*#menu_vert {
+	z-index: 10;
+}*/
+
+#sidebar {
+	text-align: center;
+	font-family: 'Amatic SC';
+	font-weight: bold;
+	z-index: 10;
+	margin: 2%;
+}
+
+#sidebar ul {
+	text-align: left;
+	display: inline;
+	list-style: none;
+}
+
+#sidebar ul li {
+	font-size: 1.6em;
+	display: inline-block;
+	position: relative;
+  	padding: 2%;
+  	color: white;
+}
+
+#sidebar ul li:hover {
+  	text-shadow: 1px 1px #BDBDBD;	
+	background: rgba(255, 255, 255, 0.5);
+	color: #FF8000;
+}
+
+#sidebar ul li a {
+	color: white;	
+}
+
+#sidebar ul li a:hover {
+	color: #FF8000;
+}
+
+#sidebar ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+#sidebar ul li ul {
+	border: solid 1px #BDBDBD;
+	padding: 0;
+	position: absolute;	
+	top: 100%;
+	left: 0;
+	width: 150%;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	background: rgba(255, 255, 255, 1);
+}
+
+#sidebar ul li ul li { 
+	padding: 5%;
+	font-size: 0.8em;
+	display: block; 
+	left: 0;
+	color: #BDBDBD;
+}
+
+#sidebar ul li ul li:hover {
+	text-shadow: 1px 1px #BDBDBD;
+	text-decoration: underline;
+}
+
+#sidebar ul li ul li a {
+	color: #BDBDBD;
+}
+
+#main {
+	padding: 2%;
+}
+
+#pagewrapper {
+	width: 100%;
+}
+
+div#footer {
+   clear: both;       /* keep footer below content and menu */
+   color: #fff;
+   background-color: #183C52; /* same bg color as in header */
+   font-family: Verdana, Arial, Sans-Serif;
+}
+
+div#footer p {
+   font-size: 1.0em;
+   padding-bottom: 0.5em;
+   padding-top: 0.2em;       /* some air for footer */
+   text-align: center;  /* centered text */
+   margin: 0;
+}
+
+div#footer p a {
+   color: #fff; /* needed becouse footer link would be same color as background otherwise */
+}
+
+p {
+   color: #2E2E2E;
+}
