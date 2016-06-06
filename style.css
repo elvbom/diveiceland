@@ -1,0 +1,432 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+}
+
+body {
+	background: lightblue url("bg.jpg");
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: top;
+	font-size: 1em;
+	font-family: "Open Sans", Helvetica Neue, Helvetica, sans-serif;
+	color: black;
+}
+
+a, a:link	a:active {
+	text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+	 text-decoration: none;
+	 /*color: #ddf;*/
+}
+
+.left {
+	float: left;
+	text-align: right;
+	padding: 1.5%;
+}
+
+div#header {	
+	overflow: auto;
+	text-align: right;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#header h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bolder;
+	display: inline;
+	font-size: 2.5em;
+	color: white;
+	white-space: nowrap;
+}
+
+div.logo {
+	width: 10%;
+	float: left;
+	margin-left: 2%;
+}
+
+#logo img {
+		vertical-align: middle;
+}
+
+#menu {
+	transition: background 0.5s;
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	font-family: 'Permanent Marker', cursive;
+	z-index: 10;
+}
+
+#menu ul {
+	text-align: left;
+	display: inline;
+	list-style: none;
+	padding: 2% 0% 2% 2%;
+	border-bottom: solid white 1px;
+}
+
+#menu ul li {
+	transition: padding 0.5s;
+	font-size: 0.8em;
+	display: inline-block;
+	position: relative;
+	padding: 2%;
+	color: white;
+}
+
+#menu ul li:hover {
+	transition: background 0.5s;
+	text-shadow: 1px 1px #2E2E2E;	
+	background: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 128, 0, 1);
+}
+
+#menu ul li a {
+	color: white;	
+}
+
+#menu ul li a:hover {
+	color: rgba(255, 128, 0, 1);
+}
+
+#menu ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+#menu ul li ul {
+	border: solid 1px #2E2E2E;
+	padding: 0;
+	position: absolute;	
+	top: 100%;
+	left: 0;
+	width: 150%;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	background: rgba(255, 255, 255, 1);
+}
+
+#menu ul li ul li { 
+	padding: 5%;
+	font-size: 0.8em;
+	display: block; 
+	left: 0;
+	color: #BDBDBD;
+}
+
+#menu ul li ul li:hover {
+	text-shadow: 1px 1px #2E2E2E;
+	text-decoration: underline;
+}
+
+#menu ul li ul li a {
+	color: #BDBDBD;
+}
+
+div.tripadv {
+	margin-top: 7%;
+	float: right;
+	padding: 1% 2% 0% 2%;
+	font-size: 0.7em;
+}
+
+.tripadv img {
+	vertical-align: middle;
+}
+
+.tripadv a {
+	color: white;
+	font-family: 'Open Sans';
+}
+
+.padi {
+	float: right;
+	clear: both;
+	padding: 0% 2% 0% 2%;
+}
+
+#content {
+	margin-top: 25%;
+}
+
+#banner {
+	background: rgba(0, 128, 255, 0.5);
+	padding: 3%;
+	width: 75%;
+	margin-bottom: 5%;
+	border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border: 0px solid #000000;
+}
+
+#banner h1 {
+	font-size: 2.8em;
+	color: rgba(255, 255, 255, 1);
+	font-family: "Helvetica", sans-serif;
+}
+
+#main {
+	padding: 2%;
+	width: 80%;
+ 	margin: 0 auto;
+ 	color: #ccc;
+}
+
+#main a {
+	color: rgba(255, 128, 0, 1);
+}
+
+#main a:hover {
+	color: rgba(150, 150, 150, 1);
+}
+
+#main div {
+	margin-bottom: 1%;
+	color: black;
+ 	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+ 	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#main div h3 {
+	color: #FFFFFF;
+	font-family: 'Permanent Marker', cursive;
+	background: rgba(0, 9, 90, 0.7);
+	font-size: 1.5em;
+	font-weight: normal;
+	padding: 2%;
+ 	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+
+#main div p {
+	padding: 2%;
+}
+
+#tours {
+	width: 100%;
+}
+
+#tours img {
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+#tours ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#tours ul li {
+	display: inline-block;
+	margin: 0;
+ 	position: relative;
+	width: 33.33%;
+}
+
+span.text-content {
+	font-size: 0.8em;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	cursor: pointer;
+	display: table;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+#tours ul li:hover span.text-content {
+	opacity: 1;
+}
+
+span.text-content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#team {
+	width: 60%;
+	float: left;
+	margin-right: 1%
+}
+
+#team img {
+	width: 50%;
+	margin-left: 2%;
+	margin-right: 2%;
+	clear: left;
+	float: left;
+	border-radius: 10%;
+}
+
+#connect {
+	width: 39%;
+	float: left;
+	clear: right;	
+}
+
+#connect img {
+	vertical-align: middle;
+}
+
+#testamonials {
+	width: 39%;
+	float: right;
+}
+
+#testamonials p.rev {
+	color: #FF8000;
+	font-style: italic;
+	margin: 1%;
+}
+
+#testamonials p.nam {
+	margin: 1%;
+	text-align: right;
+}
+
+#book {
+	width: 60%;
+	float: left;
+	clear: left;
+}
+
+#pagewrapper {
+	background-position: center;
+	background: url("bg7.jpg");
+	position : absolute;
+	width: 100%;
+    background-attachment: fixed;
+}
+
+div.footer {
+	clear: both;
+	padding: 2% 2% 2% 2%;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+.footer > div {
+	margin-top: 3%;
+}
+
+.footer a {
+	white-space: nowrap;
+	color: white;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer p {
+	white-space: nowrap;
+	font-weight: bolder;
+	margin: 0;
+	padding: 0% 0% 0% 0.5%;
+	font-size: 0.9em;
+	color: #FFFFFF;
+}
+
+.footer #footertop {
+	clear: both;
+}
+
+.footer #footertop ul {
+	font-size: 0.8em;
+	border-top: 1px solid white;
+	text-align: left;
+	display: inline;
+	list-style: none;
+	font-style: normal;
+}
+
+#footertop ul li {
+	transition: padding 0.5s;
+	font-size: 0.8em;
+	display: inline-block;
+	position: relative;
+	padding: 2% 2% 0% 2%;
+	color: white;
+}
+
+#footertop ul li:hover {
+	color: #FF8800;
+}
+
+#footertop ul li a:hover {
+	color: #FF8800;
+}
+
+.footer #footerleft {
+	vertical-align: middle;
+	text-align: center;
+	width: 40%;
+	float: left;
+	clear: left;
+}
+
+.footer #footercenter {
+	font-weight: bolder;
+	font-family: "Amatic SC";
+	font-size: 2em;
+	float: left;
+	width: 20%;
+}
+
+#footercenter a:hover {
+	color: #FF8000;
+	text-decoration: none;
+}
+
+.footer #footerright {
+	vertical-align: middle;
+	text-align: center;
+	float: right;
+	width: 40%;
+	clear: right;
+}
+
+.footer #footerbottom {
+	margin-top: 11%;
+	margin-bottom: 3%; 
+	clear: both;
+}
+
+#iob {
+	font-size: 0.7em;
+	margin-top: 1%;
+}
+
+p {
+	 color: #2E2E2E;
+}
